@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111113">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GM FLEX">
+  <meta name="application-name" content="Financeiro GM FLEX">
+  <title>Financeiro GM FLEX</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/auth.css">
+  <script src="./env.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="./js/config/supabase.js" defer></script>
+  <script src="./js/utils/supabase-init.js" defer></script>
+  <script src="./js/auth/authService.js" defer></script>
+  <script src="./js/repositories/dataRepository.js" defer></script>
+  <script src="./js/services/migrationService.js" defer></script>
+  <script src="./js/vendor/jspdf.umd.min.js" defer></script>
+  <script src="./js/vendor/chart.umd.min.js" defer></script>
+  <script src="./js/repositories/motoboysRepository.js" defer></script>
+  <script src="./js/modules/motoboysModule.js" defer></script>
+  <script src="./js/pwa.js" defer></script>
+  <script src="./js/app.js" defer></script>
+</head>
+<body>
+  <div id="app-root"></div>
+  <div id="splash">
+    <div class="s-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="5.5" cy="17.5" r="3.5"/>
+        <circle cx="18.5" cy="17.5" r="3.5"/>
+        <path d="M5.5 17.5 9 10h4l3 4.5h2"/>
+        <path d="M9 10 8 6h3"/>
+      </svg>
+    </div>
+    <h2>FINANCEIRO GM FLEX</h2>
+    <p>Guilherme Marques</p>
+  </div>
+  <div id="toast"></div>
+  <noscript>
+    <div style="position:fixed;inset:0;background:#FAF9F5;z-index:9999;display:flex;align-items:center;justify-content:center;padding:30px;text-align:center;font-family:-apple-system,Helvetica,Arial,sans-serif;">
+      <div>
+        <div style="font-weight:800;font-size:18px;margin-bottom:10px;">Este app precisa do JavaScript ativado</div>
+        <div style="font-size:14px;color:#555;line-height:1.5;">Abra o sistema em um navegador com JavaScript habilitado.</div>
+      </div>
+    </div>
+  </noscript>
+</body>
+</html>
